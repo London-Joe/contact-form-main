@@ -1,0 +1,54 @@
+/* font link */
+@font-face {
+    font-family: 'Karla', sans-serif;
+    src: url(/assets/fonts/Karla-VariableFont_wght.ttf) format('truetype');
+}
+/* css resets */
+*::before, *::after {
+    box-sizing: border-box;
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --green-200:hsl(148, 38%, 91%);
+    --green-600:hsl(169, 82%, 27%);
+    --red:hsl(0, 66%, 54%);
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--green-200)
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+/* end of resets */
+
+/* general styles */
+main {
+    margin: 3rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    max-width: 480px;
+    padding: 1rem 1.2rem;
+    background-color: var(--white);
+    border-radius: .875rem;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
