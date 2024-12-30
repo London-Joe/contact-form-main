@@ -185,4 +185,14 @@ input[type="checkbox"]{
     justify-content: space-between;
 }
 
+.query-type{
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.query-label{
+    width: 100%;
+}
+
 }
