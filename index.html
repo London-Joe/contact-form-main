@@ -40,14 +40,14 @@
       <div class="query-group">
         <label for="query-type">Query Type</label>
         <div class="query-type">
-          <span class="query-item">
-            <input type="radio" id="general" name="query-type" value="general">
-            <label for="general">General Enquiry</label>
-          </span>
-          <span class="query-item">
-            <input type="radio" id="support" name="query-type" value="support">
-            <label for="support">Support Request</label>
-          </span>
+          <label class="query-label">
+            <input type="radio" name="query-type" value="general">
+            <span>General Enquiry</span>
+          </label>
+          <label class="query-label">
+            <input type="radio" name="query-type" value="support">
+            <span>Support Request</span>
+          </label>
         </div>
         <span class="error-message" aria-live="polite">Please select a query type</span>
       </div>
@@ -56,25 +56,26 @@
         <textarea id="message" name="message" required></textarea>
         <span class="error-message" aria-live="polite">This field is required</span>
       </div>
-      <div>
-        <div class="field-group">
+      <div class="field-group">
+        <div class="consent">
           <label for="consent"></label>
             <input type="checkbox" id="consent" name="consent" required>
             <span>I consent to being contacted by the team</span>
         </div>
         <span class="error-message" aria-live="polite">To submit this form, please consent to being contacted</span>
       </div>
-      <button type="submit">Submit</button>
-      <div class="success-message">
-        <h5>Message Sent!</h5>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
-      </div>
+      <button type="submit" class="button">Submit</button>
     </form>
   </main>
+  <div class="success-message" id="success-toast">
+    <h5>Message Sent!</h5>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/js/main.js"></script>
 </body>
 </html>
