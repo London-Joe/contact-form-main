@@ -4,7 +4,7 @@
     src: url(/assets/fonts/Karla-VariableFont_wght.ttf) format('truetype');
 }
 /* css resets */
-*::before, *::after {
+*::before, *::after,form {
     box-sizing: border-box;
 }
 :root{
